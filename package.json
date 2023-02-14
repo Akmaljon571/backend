@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "build": "npm i",
-        "dev": "nodemon ./server.js",
+        "dev": "nodemon ./dist/server.js",
         "prebuild": "./node_modules/.bin/eslint --fix ./src && ./node_modules/.bin/prettier --write ./src",
-        "start": "node ./server.js",
+        "start": "node ./dist/server.js",
         "migration:generate": "npx typeorm-ts-node-esm migration:generate ./src/migrations/table -d ./src/config/ormconfig.ts",
         "migration:run": "npx typeorm-ts-node-esm migration:run -d ./src/config/ormconfig.ts",
         "migration:revert": "npm run typeorm:cli migration:revert"
