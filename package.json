@@ -4,7 +4,6 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "npm i",
         "dev": "nodemon ./dist/server.js",
         "prebuild": "./node_modules/.bin/eslint --fix ./src && ./node_modules/.bin/prettier --write ./src",
         "start": "node ./dist/server.js",
